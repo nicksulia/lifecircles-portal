@@ -1,0 +1,41 @@
+﻿body {
+	margin-top: 0px;
+}
+
+.block {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#block01 {
+	height: 90px;
+	background-image: url('images/Special-Portal_04.png');
+}
+
+#block02 {
+	height: 670px;
+	background-color: rgb(250, 250, 250);
+	background-image: url('images/Special-Portal_06.png');
+}
+
+#block03 {
+	height: 775px;
+	background-image: url('images/Special-Portal_07.png');
+}
+
+#block04 {
+	height: 984px;
+	background-color: rgb(250, 250, 250);
+	background-image: url('images/Special-Portal_08.png');
+}
+
+#block05 {
+	height: 621px;
+	background-image: url('images/Special-Portal_09.png');
+}
+
+#block06 {
+	height: 110px;
+	background-color: rgb(250, 250, 250);
+	background-image: url('images/Special-Portal_10.png');
+}
