@@ -9,12 +9,12 @@
 
 .block01 {
 	height: 90px;
-	background-image: url('/images/Special-Portal_04.png');
+	background-image: url('images/Special-Portal_04.png');
 }
 
 .block02 {
-	height: 670px;
-	background-color: rgb(250, 250, 250);
+	height: 739px;
+	background-color: rgb(234, 233, 231);
 	background-image: url('images/Special-Portal_06.png');
 }
 
@@ -25,17 +25,17 @@
 
 .block04 {
 	height: 984px;
-	background-color: rgb(250, 250, 250);
+	background-color: rgb(234, 233, 231);
 	background-image: url('images/Special-Portal_08.png');
 }
 
 .block05 {
-	height: 621px;
+	height: 573px;
 	background-image: url('images/Special-Portal_09.png');
 }
 
 .block06 {
-	height: 110px;
-	background-color: rgb(250, 250, 250);
+	height: 131px;
+	background-color: rgb(234, 233, 231);
 	background-image: url('images/Special-Portal_10.png');
 }
