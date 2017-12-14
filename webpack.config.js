@@ -39,8 +39,8 @@ module.exports = {
             flatten: true
         }]),
         new CopyWebpackPlugin([{
-            from: 'src/styles/style.css',
-            to: './',
+            from: 'images/',
+            to: './images/',
             flatten: true
         }]),
     ]
