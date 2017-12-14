@@ -9,7 +9,10 @@ module.exports = {
         filename: 'bundle.js'
     },
     devtool: 'source-map',
-
+    devServer: {
+        port: 8090,
+        disableHostCheck: true
+    },
     module: {
         rules: [
             {

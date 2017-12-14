@@ -4,12 +4,12 @@ class App extends Component {
     render() {
         return (
             <div>
-                <div class="block block01" ></div>
-                <div class="block block02" ></div>
-                <div class="block block03" ></div>
-                <div class="block block04" ></div>
-                <div class="block block05" ></div>
-                <div class="block block06" ></div>
+                <div className="block block01" ></div>
+                <div className="block block02" ></div>
+                <div className="block block03" ></div>
+                <div className="block block04" ></div>
+                <div className="block block05" ></div>
+                <div className="block block06" ></div>
             </div>
         );
     }
