@@ -1,5 +1,6 @@
 ﻿body {
-	margin-top: 0px;
+	width: 1040px;
+	margin: 0 auto;
 }
 
 .block {
@@ -20,7 +21,7 @@
 
 .block03 {
 	height: 775px;
-	background-image: url('images/Special-Portal_07.png');
+	/*background-image: url('images/Special-Portal_07.png'); */
 }
 
 .block04 {
