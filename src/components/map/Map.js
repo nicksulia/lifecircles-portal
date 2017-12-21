@@ -18,8 +18,8 @@ const MapWithAMarkerClusterer = compose(
     }),
     withHandlers({
         onMarkerClustererClick: () => (markerClusterer) => {
-            const clickedMarkers = markerClusterer.getMarkers()
-            console.log(`Current clicked markers length: ${clickedMarkers.length}`)
+            const clickedMarkers = markerClusterer.getMarkers();
+            console.log(`Current clicked markers length: ${clickedMarkers.length}`);
             console.log(clickedMarkers)
         },
     }),
@@ -38,6 +38,7 @@ const MapWithAMarkerClusterer = compose(
         >
             {props.markers.map(marker => (
                 <Marker
+                    onClick={()=> {console.log(marker)}}
                     key={marker.photo_id}
                     position={{ lat: marker.latitude, lng: marker.longitude }}
                 />
