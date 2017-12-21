@@ -9,7 +9,7 @@
     "server": "webpack-dev-server --content-base dist/ --host 172.22.197.39"
   },
   "author": "Nick",
-  "license": "APACHE 2.0",
+  "license": "MIT License",
   "browserslist": [
     "last 2 versions"
   ],
