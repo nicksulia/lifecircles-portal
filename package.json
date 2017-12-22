@@ -6,7 +6,8 @@
     "build": "webpack --display-error-details",
     "lint": "eslint --format 'node_modules/eslint-friendly-formatter' . --ext .js --ext .jsx",
     "watch": "webpack --config webpack.config.js --display-modules --watch --progress",
-    "server": "webpack-dev-server --content-base dist/ --host 172.22.197.39"
+    "server": "webpack-dev-server --content-base dist/ --host 172.22.197.39",
+    "server:localhost": "webpack-dev-server --content-base dist/"
   },
   "author": "Nick",
   "license": "APACHE 2.0",
