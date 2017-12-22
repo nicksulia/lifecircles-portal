@@ -24,11 +24,12 @@
     "react-dom": "^15.4.1",
     "react-google-maps": "^9.4.2",
     "react-redux": "^5.0.1",
+    "react-select2-wrapper": "^1.0.4-beta5",
     "recompose": "^0.26.0",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0",
     "redux-actions": "^2.2.1",
-    "redux-promise-middleware": "^4.4.2"
+    "redux-promise-middleware": "^4.4.2",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
