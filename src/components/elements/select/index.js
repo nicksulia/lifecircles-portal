@@ -19,11 +19,13 @@ class Select extends PureComponent {
                 </div>
                 {
                     this.state.isDisplayed &&
-                    <div>
+                    <div className="select-dropdown">
                         {
                             this.props.options.map((option) => {
                                 return (
-                                    <span key={option.value} onClick={() => {console.log(option.value)}}>{option.label}</span>
+                                    <div>
+                                        <span>[ ]</span><span key={option.value} onClick={() => {console.log(option.value)}}>{option.label}</span>
+                                    </div>
                                 );
                             })
                         }

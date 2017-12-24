@@ -25,10 +25,16 @@
 }
 
 
-
+.select-dropdown {
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    width: 100%;
+}
 .select-wrapper {
+    position: relative;
     font-size: 14px;
-    width: 150px;
+    width: 120px;
     display: block;
     margin-left: auto;
 }
