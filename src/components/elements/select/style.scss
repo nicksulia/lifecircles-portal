@@ -1,0 +1,34 @@
+.filters-button {
+    background-color: #008e98;
+    color: #FFFFFF;
+    height: 30px;
+    width: 120px;
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    .select-plus-svg {
+        background-color: #FFF;
+        display: inline-block;
+        margin-left: 10px;
+        width: 20%;
+        height: 15px;
+        -webkit-mask-image: url("./plus.svg");;
+        mask-image: url("./plus.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 15px 15px;
+        mask-size: 15px 15px;
+    }
+    .select-button-text {
+        height: 15px;
+    }
+}
+
+
+
+.select-wrapper {
+    font-size: 14px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+}

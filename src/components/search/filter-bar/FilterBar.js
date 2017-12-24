@@ -1,20 +1,21 @@
 import React, { PureComponent } from 'react';
-import Select2 from 'react-select2-wrapper';
+import Select from '../../elements/select';
 
 class FilterBar extends PureComponent {
+
     render() {
+        const options = [
+
+
+                { label: 'Yellow', value: 'yellow' },
+                { label: 'Red', value: 'red' },
+                { label: 'Blue', value: 'blue' }
+
+
+        ];
         return (
-            <Select2
-                data={[
-                    { text: 'bug', id: 1 },
-                    { text: 'feature', id: 2 },
-                    { text: 'documents', id: 3 },
-                    { text: 'discussion', id: 4 },
-                ]}
-                options={{
-                    placeholder: 'search by tags',
-                }}
-            />
+
+            <Select options={options}/>
         );
     }
 }
