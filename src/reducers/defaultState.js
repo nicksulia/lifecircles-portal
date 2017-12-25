@@ -35,3 +35,15 @@ export const filterState = Object.freeze({
         ]
     }
 });
+
+export const mapState = Object.freeze({
+    specialists: [],
+    centerMap: {},
+    displayedSpecialist: null,
+    activeFilters : {
+        "age": [],
+        "diagnosis": [],
+        "price_level": [],
+        "tags": []
+    }
+});
