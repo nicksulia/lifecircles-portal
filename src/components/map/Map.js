@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-const fetch = require("isomorphic-fetch");
+import * as  specialists from '../../metadata/specialists.json';
 const { compose, withProps, withHandlers } = require("recompose");
 const {
     withScriptjs,
@@ -27,8 +27,8 @@ const MapWithAMarkerClusterer = compose(
     withGoogleMap
 )(props =>
     <GoogleMap
-        defaultZoom={3}
-        defaultCenter={{ lat: 25.0391667, lng: 121.525 }}
+        defaultZoom={8}
+        defaultCenter={{ lat: 50.3587, lng: 30.452921 }}
     >
         <MarkerClusterer
             onClick={props.onMarkerClustererClick}
@@ -39,8 +39,8 @@ const MapWithAMarkerClusterer = compose(
             {props.markers.map(marker => (
                 <Marker
                     onClick={()=> {console.log(marker)}}
-                    key={marker.photo_id}
-                    position={{ lat: marker.latitude, lng: marker.longitude }}
+                    key={marker.id}
+                    position={{ lat: parseFloat(marker.latitude), lng: parseFloat(marker.longitude) }}
                 />
             ))}
         </MarkerClusterer>
@@ -53,18 +53,11 @@ class DemoApp extends PureComponent {
     }
 
     componentDidMount() {
-        const url = [
-            // Length issue
-            `https://gist.githubusercontent.com`,
-            `/farrrr/dfda7dd7fccfec5474d3`,
-            `/raw/758852bbc1979f6c4522ab4e92d1c92cba8fb0dc/data.json`
-        ].join("");
 
-        fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                this.setState({ markers: data.photos });
-            });
+        console.log(specialists.data);
+        this.setState({
+            markers: specialists.data
+        })
     }
 
     render() {
