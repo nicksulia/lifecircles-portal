@@ -28,7 +28,7 @@ export default handleActions({
             displayedSpecialist
         }
     },
-    [ACTIONS.GET_SPECIALISTS_CALL]: (state , { specialists }) => {
+    [`${ACTIONS.GET_SPECIALISTS_CALL}_FULFILLED`]: (state , { specialists }) => {
         return {
             ...state,
             specialists
