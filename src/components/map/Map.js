@@ -1,5 +1,9 @@
 import React, { PureComponent } from 'react';
+
 import * as  specialists from '../../metadata/specialists.json';
+import './style.scss';
+
+import SpecialistsBlock from './SpecialistsBlock.js';
 const { compose, withProps, withHandlers } = require("recompose");
 const {
     withScriptjs,
@@ -13,7 +17,7 @@ const MapWithAMarkerClusterer = compose(
     withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDv_U_JpFIV_aVs0ECVVhxPcGI9-9Zu7gQ&v=3.exp&libraries=geometry,drawing,places",
         loadingElement: <div style={{ height: `100%` }} />,
-        containerElement: <div style={{ height: `600px` }} />,
+        containerElement: <div style={{ height: `400px`, width: `700px` }} />,
         mapElement: <div style={{ height: `100%` }} />,
     }),
     withHandlers({
@@ -62,7 +66,10 @@ class DemoApp extends PureComponent {
 
     render() {
         return (
-            <MapWithAMarkerClusterer markers={this.state.markers} />
+            <div className = "map-component-wrapper">
+                <SpecialistsBlock/>
+                <MapWithAMarkerClusterer markers={this.state.markers} />
+            </div>
         )
     }
 }
