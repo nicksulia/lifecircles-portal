@@ -1,7 +1,13 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import './style.scss';
 
 class Select extends PureComponent {
+
+    static propTypes = {
+        options: PropTypes.object.isRequired
+    };
+
     constructor(props) {
         super(props);
 
@@ -14,7 +20,7 @@ class Select extends PureComponent {
         return (
             <div className="select-wrapper">
                 <div className="filters-button" onClick={() => {this.setState({isDisplayed:!this.state.isDisplayed})}}>
-                    <div className="select-plus-svg"></div>
+                    <div className="select-plus-svg"/>
                     <div className="select-button-text">Add Filters</div>
                 </div>
                 {
