@@ -1,6 +1,10 @@
-import { applyMiddleware, createStore, compose } from 'redux';
-import promiseMiddleware from 'redux-promise-middleware';
-import thunk from 'redux-thunk';
-import reducer from '../reducers'
+'use strict';
 
-export default compose(applyMiddleware(thunk, promiseMiddleware()))(createStore)(reducer);
+import { applyMiddleware, createStore, compose } from 'redux';
+import thunk from 'redux-thunk';
+import promiseMiddleware from 'redux-promise-middleware';
+import rootReducer from '../reducers';
+
+const store = compose(applyMiddleware(thunk, promiseMiddleware()))(createStore)(rootReducer);
+
+export default store;
