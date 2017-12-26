@@ -38,6 +38,7 @@ export const filterState = Object.freeze({
 
 export const mapState = Object.freeze({
     specialists: [],
+    filteredSpecialists:[],
     centerMap: {},
     displayedSpecialist: null,
     activeFilters : {
