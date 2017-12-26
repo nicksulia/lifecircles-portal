@@ -1,8 +1,10 @@
 export default (state) => {
-    const markers = state.mapState.specialists || [];
+    const specialists = state.mapState.specialists || [];
+    const filteredSpecialists = state.mapState.filteredSpecialists || [];
     const activeFilters = state.mapState.activeFilters || {};
     return {
-        markers,
-        activeFilters
+        specialists,
+        activeFilters,
+        filteredSpecialists
     };
 };
