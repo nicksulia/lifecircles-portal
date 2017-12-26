@@ -6,7 +6,8 @@
     "build": "webpack --display-error-details",
     "lint": "eslint --format 'node_modules/eslint-friendly-formatter' . --ext .js --ext .jsx",
     "watch": "webpack --config webpack.config.js --display-modules --watch --progress",
-    "server": "webpack-dev-server --content-base dist/ --host 172.22.197.39"
+    "server": "webpack-dev-server --content-base dist/ --host 172.22.197.39",
+    "server:localhost": "webpack-dev-server --content-base dist/"
   },
   "author": "Nick",
   "license": "MIT License",
@@ -20,15 +21,17 @@
     "jquery-ui": "^1.12.1",
     "lodash": "^4.17.2",
     "moment": "^2.19.3",
+    "prop-types": "^15.6.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-google-maps": "^9.4.2",
     "react-redux": "^5.0.1",
+    "react-select-plus": "^1.0.0-rc.10.patch1",
     "recompose": "^0.26.0",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0",
     "redux-actions": "^2.2.1",
-    "redux-promise-middleware": "^4.4.2"
+    "redux-promise-middleware": "^4.4.2",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
@@ -55,6 +58,7 @@
     "extract-text-webpack-plugin": "^3.0.1",
     "fs-sync": "1.0.4",
     "html-loader": "^0.4.4",
+    "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",
     "react-css-modules": "^4.1.0",
     "sass-loader": "^6.0.6",

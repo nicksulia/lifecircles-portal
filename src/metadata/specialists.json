@@ -13,8 +13,7 @@
       "web_site": "shodinki.com",
       "phone": "+38 067 466 0437",
       "address": "Zabolotnogo str., 146, Kyiv, 02000",
-      "categories":{ "education": true ,"children": true, "age":[ "0-1","2-5", "6-10", "11-16","17-30", "30+"], "diagnosis": ["autism"], "price_level": "high" },
-      "parents_included": true
+      "categories":{ "tags":["education" ,"children", "parents_included"], "age":[ "0-1","2-5", "6-10", "11-16","17-30", "30+"], "diagnosis": ["autism"], "price_level": ["high"] }
     },
 
     {
@@ -29,8 +28,7 @@
       "web_site": "tomatis-kiev.com.ua",
       "phone": "+38 063 473 7964",
       "address": "Chornovola str., 25, Kyiv, 01135",
-      "categories":{ "education": true ,"children": true, "age":["6-10", "11-16"], "diagnosis": ["autism"], "price_level": "medium" },
-      "parents_included": true
+      "categories":{ "tags":["education" ,"children", "parents_included"], "age":["6-10", "11-16"], "diagnosis": ["autism"], "price_level": ["medium"] }
     },
 
     {
@@ -45,8 +43,7 @@
       "web_site": "cfr-krok.ua",
       "phone": "+38 044 587 8767",
       "address": "Ivana Dyachenka str., 20 В, Kyiv, 02000",
-      "categories": { "reabilitation": true ,"children": true, "age":["6-10", "11-16"], "diagnosis": ["dts"], "price_level": "medium" },
-      "parents_included": false
+      "categories": { "tags":["reabilitation" ,"children"], "age":["6-10", "11-16"], "diagnosis": ["dts"], "price_level": ["medium"] }
     },
 
     {
@@ -54,15 +51,14 @@
       "name" : "Sonyachne Kolo",
       "description" : "Public Association for the Support of Autistic Persons 'Sonyachne Kolo'",
       "expirience": "4 years",
-      "longitude": "30.483529",
-      "latitude": "50.457491",
+      "longitude": "30.677859",
+      "latitude": "50.404657",
       "created_date": "2 Feb 2015",
       "modified_date": "4 Jun 2017",
       "web_site": "-",
       "phone": "+38 044 383 6136",
       "address": "Kharkiv highway, 121/3, Kyiv, 02000",
-      "categories":{ "education": true ,"children": true, "age":["6-10", "11-16", "17-35"], "diagnosis": ["autism"], "price_level": "free" },
-      "parents_included": true
+      "categories":{ "tags":["education" ,"children", "parents_included"], "age":["6-10", "11-16", "17-35"], "diagnosis": ["autism"], "price_level": ["free"] }
     },
 
     {
@@ -77,8 +73,7 @@
       "web_site": "-",
       "phone": "+38 096 665 5797",
       "address": "Prospect Vasyl Porika, 13-B, Kiev, 02000",
-      "categories":{ "education": true ,"children": true, "fund":true, "age":["6-10", "11-16"],"diagnosis": ["autism"], "price_level": "high" },
-      "parents_included": true
+      "categories":{ "tags":["education" ,"children", "parents_included"], "age":["6-10", "11-16"],"diagnosis": ["autism"], "price_level": ["high"] }
     },
 
     {
@@ -93,7 +88,7 @@
       "web_site": "aba-therapy.com.ua",
       "phone": "+38 094 926 4323",
       "address": "Vsevolod Nestyka str., 5,4, Kyiv 02000",
-      "parents_included": true
+      "categories":{ "tags":["education" ,"children", "parents_included"], "age":["6-10", "11-16"],"diagnosis": ["autism"], "price_level": ["low"] }
     },
 
     {
@@ -108,8 +103,7 @@
       "web_site": "childfuture.kiev.ua",
       "phone": "+38 050 352 90 97",
       "address": "Heroes of Sevastopol str, 41/15, Kyiv, 03061",
-      "categories":{ "education": true ,"children": true, "fund":true, "age":["6-10", "11-16"],"diagnosis": ["autism"], "price_level": "low" },
-      "parents_included": true
+      "categories":{ "tags":["education" ,"children", "parents_included"], "age":["6-10", "11-16"],"diagnosis": ["autism"], "price_level": ["low"] }
     }
 
   ]

@@ -1,0 +1,22 @@
+.specialist-info-list-elements-wrapper {
+  position: relative;
+  width: 300px;
+  z-index: 1;
+  height: 400px;
+  background-color: #eae9e7;
+  -webkit-box-shadow: 5px 0 5px -1px #888;
+  box-shadow: 5px 0 5px -1px #888;
+  overflow-y: auto;
+}
+
+.specialist-info-list-element {
+  border-collapse: collapse;
+  border: 1px solid #000;
+  border-top: 0;
+}
+
+.map-component-wrapper {
+  position: relative;
+  display: inline-flex;
+  flex: 1;
+}

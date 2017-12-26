@@ -16,6 +16,12 @@ module.exports = {
     module: {
         rules: [
             {
+                enforce: 'pre',
+                test: /\.jsx?$/,
+                exclude: /(node_modules|idea|bower_components|brass-build)/,
+                loaders: ['eslint-loader']
+            },
+            {
                 test: /\.jsx?$/,
                 exclude: /(node_modules|idea|bower_components)/,
                 use: 'babel-loader'
@@ -23,6 +29,10 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.s(a|c)ss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
                 test: /\.svg$/,

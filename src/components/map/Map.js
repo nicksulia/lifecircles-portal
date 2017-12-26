@@ -1,5 +1,9 @@
 import React, { PureComponent } from 'react';
-const fetch = require("isomorphic-fetch");
+
+import * as  specialists from '../../metadata/specialists.json';
+import './style.scss';
+
+import SpecialistsBlock from './SpecialistsBlock.js';
 const { compose, withProps, withHandlers } = require("recompose");
 const {
     withScriptjs,
@@ -13,7 +17,7 @@ const MapWithAMarkerClusterer = compose(
     withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDv_U_JpFIV_aVs0ECVVhxPcGI9-9Zu7gQ&v=3.exp&libraries=geometry,drawing,places",
         loadingElement: <div style={{ height: `100%` }} />,
-        containerElement: <div style={{ height: `600px` }} />,
+        containerElement: <div style={{ height: `400px`, width: `700px` }} />,
         mapElement: <div style={{ height: `100%` }} />,
     }),
     withHandlers({
@@ -27,8 +31,8 @@ const MapWithAMarkerClusterer = compose(
     withGoogleMap
 )(props =>
     <GoogleMap
-        defaultZoom={3}
-        defaultCenter={{ lat: 25.0391667, lng: 121.525 }}
+        defaultZoom={8}
+        defaultCenter={{ lat: 50.3587, lng: 30.452921 }}
     >
         <MarkerClusterer
             onClick={props.onMarkerClustererClick}
@@ -39,8 +43,8 @@ const MapWithAMarkerClusterer = compose(
             {props.markers.map(marker => (
                 <Marker
                     onClick={()=> {console.log(marker)}}
-                    key={marker.photo_id}
-                    position={{ lat: marker.latitude, lng: marker.longitude }}
+                    key={marker.id}
+                    position={{ lat: parseFloat(marker.latitude), lng: parseFloat(marker.longitude) }}
                 />
             ))}
         </MarkerClusterer>
@@ -53,23 +57,19 @@ class DemoApp extends PureComponent {
     }
 
     componentDidMount() {
-        const url = [
-            // Length issue
-            `https://gist.githubusercontent.com`,
-            `/farrrr/dfda7dd7fccfec5474d3`,
-            `/raw/758852bbc1979f6c4522ab4e92d1c92cba8fb0dc/data.json`
-        ].join("");
 
-        fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                this.setState({ markers: data.photos });
-            });
+        console.log(specialists.data);
+        this.setState({
+            markers: specialists.data
+        })
     }
 
     render() {
         return (
-            <MapWithAMarkerClusterer markers={this.state.markers} />
+            <div className = "map-component-wrapper">
+                <SpecialistsBlock/>
+                <MapWithAMarkerClusterer markers={this.state.markers} />
+            </div>
         )
     }
 }

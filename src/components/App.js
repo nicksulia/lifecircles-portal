@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import Map from './map/Map.js';
+import FilterBar from './search/filter-bar/FilterBar.js';
 
 class App extends PureComponent {
     render() {
@@ -7,7 +8,10 @@ class App extends PureComponent {
             <div>
                 <div className="block block01" ></div>
                 <div className="block block02" ></div>
-                <div className="block block03" ><Map/></div>
+                <div className="block block03" >
+                    <FilterBar/>
+                    <Map/>
+                </div>
                 <div className="block block04" ></div>
                 <div className="block block05" ></div>
                 <div className="block block06" ></div>
