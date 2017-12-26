@@ -1,9 +1,9 @@
 import constants from './actionsConstants.js';
 import {filterSpecialists as filterSpecialistsList} from '../lib/mockApi/specCall.js';
 
-export const filterSpecialists = (filtersList, specialists) => ({
+export const filterSpecialists = (filtersList) => ({
     type: constants.FILTER_SPECIALISTS,
-    filteredSpecialists: filterSpecialistsList(filtersList, specialists)
+    filteredSpecialists: filterSpecialistsList(filtersList)
 });
 
 export const setFiltersList = (groupName, value, id) => ({
