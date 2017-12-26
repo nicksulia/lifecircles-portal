@@ -1,6 +1,5 @@
-{
-  "name": "specialists",
-  "data": [
+export default
+[
     {
       "id": "0001",
       "name" : "Blahodiyna Orhanizatsiya 'Shkola-Skhodynky'",
@@ -106,5 +105,4 @@
       "categories":{ "tags":["education" ,"children", "parents_included"], "age":["6-10", "11-16"],"diagnosis": ["autism"], "price_level": ["low"] }
     }
 
-  ]
-}
+]
