@@ -1,7 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Application from './components/App.js';
-/*
- * Render the above component into the div#app
- */
-ReactDOM.render(<Application />, document.getElementById('app'));
+import store from './store'
+import { Provider } from 'react-redux';
+import {getSpecialistsCall} from './actions/mapActions.js';
+
+store.dispatch(getSpecialistsCall());
+
+ReactDOM.render(
+    <Provider store={store}>
+        <Application/>
+    </Provider>
+    , document.getElementById('app'));

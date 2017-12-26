@@ -1,6 +1,4 @@
 import React, { PureComponent } from 'react';
-
-import * as  specialists from '../../metadata/specialists.json';
 import './style.scss';
 
 import SpecialistsBlock from './SpecialistsBlock.js';
@@ -30,45 +28,44 @@ const MapWithAMarkerClusterer = compose(
     withScriptjs,
     withGoogleMap
 )(props =>
-    <GoogleMap
-        defaultZoom={8}
-        defaultCenter={{ lat: 50.3587, lng: 30.452921 }}
-    >
-        <MarkerClusterer
-            onClick={props.onMarkerClustererClick}
-            averageCenter
-            enableRetinaIcons
-            gridSize={60}
-        >
-            {props.markers.map(marker => (
-                <Marker
-                    onClick={()=> {console.log(marker)}}
-                    key={marker.id}
-                    position={{ lat: parseFloat(marker.latitude), lng: parseFloat(marker.longitude) }}
-                />
-            ))}
-        </MarkerClusterer>
-    </GoogleMap>
+    {
+        return (
+            <GoogleMap
+                defaultZoom={8}
+                defaultCenter={{ lat: 50.3587, lng: 30.452921 }}
+            >
+                <MarkerClusterer
+                    onClick={props.onMarkerClustererClick}
+                    averageCenter
+                    enableRetinaIcons
+                    gridSize={60}
+                >
+                    {props.markers.map(marker => (
+                        <Marker
+                            onClick={()=> {console.log(marker)}}
+                            key={marker.id}
+                            position={{ lat: parseFloat(marker.latitude), lng: parseFloat(marker.longitude) }}
+                        />
+                    ))}
+                </MarkerClusterer>
+            </GoogleMap>
+        )
+    }
 );
 
 class DemoApp extends PureComponent {
-    componentWillMount() {
-        this.setState({ markers: [] })
+    constructor(props){
+        super(props);
     }
 
-    componentDidMount() {
-
-        console.log(specialists.data);
-        this.setState({
-            markers: specialists.data
-        })
+    componentWillMount(){
     }
 
     render() {
         return (
-            <div className = "map-component-wrapper">
-                <SpecialistsBlock/>
-                <MapWithAMarkerClusterer markers={this.state.markers} />
+            <div className = "map-component-wrapper" >
+                <SpecialistsBlock specialists = {this.props.markers}/>
+                <MapWithAMarkerClusterer markers={this.props.markers} />
             </div>
         )
     }

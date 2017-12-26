@@ -1,5 +1,5 @@
 import constants from './actionsConstants.js';
-import {filterSpecialistsList} from '../lib/mockApi/specCall.js';
+import {filterSpecialists as filterSpecialistsList} from '../lib/mockApi/specCall.js';
 
 export const filterSpecialists = (filtersList, specialists) => ({
     type: constants.FILTER_SPECIALISTS,

@@ -1,11 +1,10 @@
-import specialists from '../../metadata/specialists.json';
+import specialists from '../../metadata/specialists';
 
 export const getSpecialists = () => {
-    return Promise.resolve(specialists.data);
+    return specialists;
 }
 
-export const filterSpecialists = (filterList, specialists) => {
-    console.log(filterList);
-    console.log(specialists);
+export const filterSpecialists = () => {
+
     return {};
 }

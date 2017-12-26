@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import Map from './map/Map.js';
-import FilterBar from './search/filter-bar/FilterBar.js';
+import Map from '../containers/map/Map.js';
+import FilterBar from '../containers/filter/FilterBar.js';
 
 class App extends PureComponent {
     render() {
