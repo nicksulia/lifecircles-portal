@@ -27,6 +27,7 @@ export const filterState = Object.freeze({
         ]
     },
     "tags": {
+        label:"Tags",
         options:[
             {label: "Education", value:"education", checked: false},
             //{label: "With children", value:"children", checked: false},
@@ -38,6 +39,7 @@ export const filterState = Object.freeze({
 
 export const mapState = Object.freeze({
     specialists: [],
+    filteredSpecialists:[],
     centerMap: {},
     displayedSpecialist: null,
     activeFilters : {

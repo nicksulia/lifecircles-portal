@@ -4,7 +4,6 @@ import View from '../../components/map/Map.js';
 import mapStateToProps from './state-to-props.js';
 import { setSpecialist, getSpecialistsCall } from '../../actions/mapActions.js';
 
-
 const actionCreators = {
     setSpecialist: setSpecialist,
     getSpecialists: getSpecialistsCall
