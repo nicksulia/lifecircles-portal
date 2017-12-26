@@ -27,6 +27,7 @@ export const filterState = Object.freeze({
         ]
     },
     "tags": {
+        label:"Tags",
         options:[
             {label: "Education", value:"education", checked: false},
             //{label: "With children", value:"children", checked: false},
