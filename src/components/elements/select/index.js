@@ -5,7 +5,7 @@ import './style.scss';
 class Select extends PureComponent {
 
     static propTypes = {
-        options: PropTypes.object.isRequired
+        groups: PropTypes.object.isRequired
     };
 
     constructor(props) {
@@ -27,15 +27,15 @@ class Select extends PureComponent {
                     this.state.isDisplayed &&
                     <div className="select-dropdown">
                         {
-                            this.props.options.map((group, id) => {
+                            Object.keys(this.props.groups).map((group, id) => {
                                 return (
-                                    <div key = {id}>
-                                        <div><b>{group.label}</b></div>
+                                    <div key = {group+'_'+id}>
+                                        <div><b>{this.props.groups[group].label}</b></div>
                                         {
-                                            group.options.map((option) => {
+                                            this.props.groups[group].options.map((option) => {
                                                 return (
-                                                    <div key = {group.value} onClick={() => {console.log(option.value)}}>
-                                                        <span>[ ]</span><span>{option.label}</span>
+                                                    <div key = {option.value} onClick={() => {console.log(option.value)}}>
+                                                        <span>[{option.checked ? "x" : " "}]</span><span>{option.label}</span>
                                                     </div>
                                                 )
                                             })

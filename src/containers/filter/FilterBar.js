@@ -2,11 +2,12 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import View from '../../components/search/filter-bar/FilterBar.js';
 import mapStateToProps from './state-to-props.js';
-import { setFiltersList } from '../../actions/filterActions.js';
+import { setFiltersList, filterSpecialists } from '../../actions/filterActions.js';
 
 
 const actionCreators = {
-    setFiltersList: setFiltersList
+    setFiltersList: setFiltersList,
+    filterSpecialists: filterSpecialists
 };
 
 function mapDispatchToProps(dispatch) {
