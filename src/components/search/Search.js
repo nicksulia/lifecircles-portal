@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react';
 import SearchBar from './search-bar/SearchBar.js';
-import FilterBar from './filter-bar/FilterBar.js';
+import FilterBar from '../../containers/filter/FilterBar.js';
+import './styles.scss';
 
 class Search extends PureComponent {
     render() {
         return (
-            <div>
+            <div className="search-panel-wrapper">
                 <SearchBar/>
                 <FilterBar/>
             </div>
