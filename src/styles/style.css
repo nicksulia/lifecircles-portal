@@ -25,10 +25,19 @@
 	height: 775px;
 	/*background-image: url('images/Special-Portal_07.png'); */
 }
-.section-name {
+.section-header {
 	font-family: "Roboto Reg", Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 32px;
 	text-align: center;
+}
+
+.section-footer {
+	font-family: "Roboto Reg", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	line-height: 130px;
+	height: 130px;
+
 }
 
 .block04 {
