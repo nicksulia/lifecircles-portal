@@ -9,6 +9,7 @@ class App extends PureComponent {
                 <div className="block block01" ></div>
                 <div className="block block02" ></div>
                 <div className="block block03" >
+                    <div className = "section-name">ORGANIZATIONS AND SPECIALISTS</div>
                     <Search/>
                     <Map/>
                 </div>
