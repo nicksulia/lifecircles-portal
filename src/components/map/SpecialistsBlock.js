@@ -19,7 +19,9 @@ class SpecialistsBlock extends PureComponent {
                                     <b>{specialist.name}</b>
                                     </div>
                                 <div className="specialist-info-list-element-label">
-                                    {specialist.address} <br/> {specialist.phone}
+                                    {specialist.address}
+                                    <br/>
+                                    {specialist.phone}
                                 </div>
                                 <div className="specialist-info-list-bottom-border"/>
                             </div>
