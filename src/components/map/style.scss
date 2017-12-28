@@ -1,5 +1,5 @@
 .specialist-info-list-elements-wrapper {
-  font-family: "Roboto Reg";
+  font-family: 'Roboto', serif;
   position: relative;
   width: 300px;
   z-index: 1;
@@ -11,11 +11,21 @@
 }
 
 .specialist-info-list-element {
+  &:hover {
+    cursor: pointer;
+    background-color: #f2f1f0;
+  }
   padding: 10px 10px 0 10px;
   min-height: 95px;
   display: flex;
   justify-content: space-between;
   flex-flow: column;
+}
+
+.specialist-info-list-element-label {
+  & > b {
+    color: #000;
+  }
 }
 
 .map-component-wrapper {

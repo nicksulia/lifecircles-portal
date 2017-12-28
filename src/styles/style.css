@@ -26,13 +26,13 @@
 	/*background-image: url('images/Special-Portal_07.png'); */
 }
 .section-header {
-	font-family: "Roboto Reg", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'Roboto', serif;
 	font-size: 32px;
 	text-align: center;
 }
 
 .section-footer {
-	font-family: "Roboto Reg", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'Roboto', serif;
 	font-size: 14px;
 	text-align: center;
 	line-height: 130px;
