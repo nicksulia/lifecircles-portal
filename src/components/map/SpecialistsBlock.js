@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-//import * as  specialists from '../../metadata/specialists.json';
+import VisitCard from './SpecialistVisitCard.js';
 import './style.scss';
 
 class SpecialistsBlock extends PureComponent {
@@ -11,22 +11,23 @@ class SpecialistsBlock extends PureComponent {
         return (
             <div className="specialist-info-list-elements-wrapper">
                 {
-                    this.props.specialists ?
-                    this.props.specialists.map((specialist) => {
-                        return (
-                            <div key={specialist.id} className="specialist-info-list-element">
-                                <div className="specialist-info-list-element-label">
-                                    <b>{specialist.name}</b>
+                    this.props.displayedSpecialist ? <VisitCard data = {this.props.displayedSpecialist} hide = {this.props.hideSpecialist}/> :
+                    (this.props.specialists ?
+                        this.props.specialists.map((specialist) => {
+                            return (
+                                <div key={specialist.id} className="specialist-info-list-element">
+                                    <div className="specialist-info-list-element-label">
+                                        <b>{specialist.name}</b>
                                     </div>
-                                <div className="specialist-info-list-element-label">
-                                    {specialist.address}
-                                    <br/>
-                                    {specialist.phone}
+                                    <div className="specialist-info-list-element-label">
+                                        {specialist.address}
+                                        <br/>
+                                        {specialist.phone}
+                                    </div>
+                                    <div className="specialist-info-list-bottom-border"/>
                                 </div>
-                                <div className="specialist-info-list-bottom-border"/>
-                            </div>
-                        )
-                    }) : null
+                            )
+                        }) : null)
                 }
             </div>
         );

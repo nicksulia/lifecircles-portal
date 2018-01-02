@@ -42,7 +42,7 @@ const MapWithAMarkerClusterer = compose(
                 >
                     {props.markers.map(marker => (
                         <Marker
-                            onClick={()=> {console.log(marker)}}
+                            onClick={()=> { props.displaySpecialist(marker)}}
                             key={marker.id}
                             position={{ lat: parseFloat(marker.latitude), lng: parseFloat(marker.longitude) }}
                         />
@@ -65,8 +65,8 @@ class DemoApp extends PureComponent {
         console.log(this.props);
         return (
             <div className = "map-component-wrapper" >
-                <SpecialistsBlock specialists = {this.props.filteredSpecialists}/>
-                <MapWithAMarkerClusterer markers={this.props.filteredSpecialists} />
+                <SpecialistsBlock specialists = {this.props.filteredSpecialists} hideSpecialist = {this.props.setSpecialist} displayedSpecialist = {this.props.displayedSpecialist}/>
+                <MapWithAMarkerClusterer markers={this.props.filteredSpecialists} displaySpecialist = {this.props.setSpecialist}/>
             </div>
         )
     }
