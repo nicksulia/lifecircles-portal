@@ -1,14 +1,4 @@
 .idea
-.DS_Store
 node_modules/*
 !node_modules/regenerator-runtime/
 dist
-brass_build
-npm-debug.log
-tools/localization/fromTranslation/*
-!tools/localization/fromTranslation/.gitkeep
-tools/localization/toTranslate/*
-!tools/localization/toTranslate/.gitkeep
-test/coverage
-coverage
-*.sw[po]
