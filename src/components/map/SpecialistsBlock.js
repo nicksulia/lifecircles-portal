@@ -15,7 +15,7 @@ class SpecialistsBlock extends PureComponent {
                     (this.props.specialists ?
                         this.props.specialists.map((specialist) => {
                             return (
-                                <div key={specialist.id} className="specialist-info-list-element">
+                                <div key={specialist.id} className="specialist-info-list-element" onClick={() => {this.props.displaySpecialist(specialist)} }>
                                     <div className="specialist-info-list-element-label">
                                         <b>{specialist.name}</b>
                                     </div>

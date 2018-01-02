@@ -65,7 +65,7 @@ class DemoApp extends PureComponent {
         console.log(this.props);
         return (
             <div className = "map-component-wrapper" >
-                <SpecialistsBlock specialists = {this.props.filteredSpecialists} hideSpecialist = {this.props.setSpecialist} displayedSpecialist = {this.props.displayedSpecialist}/>
+                <SpecialistsBlock specialists = {this.props.filteredSpecialists} displaySpecialist = {this.props.setSpecialist} hideSpecialist = {this.props.setSpecialist} displayedSpecialist = {this.props.displayedSpecialist}/>
                 <MapWithAMarkerClusterer markers={this.props.filteredSpecialists} displaySpecialist = {this.props.setSpecialist}/>
             </div>
         )
