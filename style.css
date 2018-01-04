@@ -8,34 +8,35 @@
 }
 
 #block01 {
-	height: 90px;
-	background-image: url('images/Special-Portal_04.png');
-}
+ 	height: 90px;
+ 	background-image: url('images/image_header.png');
+ }
 
-#block02 {
-	height: 739px;
-	background-color: rgb(234, 233, 231);
-	background-image: url('images/Special-Portal_06.png');
-}
+ #block02 {
+ 	height: 40px;
+ 	background-color: rgb(250, 249, 247);
+ 	background-image: url('images/image_navigation.png');
+ }
 
 #block03 {
-	height: 775px;
-	background-image: url('images/Special-Portal_07.png');
+	height: 699px;
+	background-color: rgb(234, 233, 231);
+	background-image: url('images/image_welcome.png');
 }
 
 #block04 {
-	height: 984px;
-	background-color: rgb(234, 233, 231);
-	background-image: url('images/Special-Portal_08.png');
+	height: 965px;
+	background-image: url('images/image_map.png');
 }
 
 #block05 {
-	height: 573px;
-	background-image: url('images/Special-Portal_09.png');
+	height: 1023px;
+	background-color: rgb(234, 233, 231);
+	background-image: url('images/image_events.png');
 }
 
 #block06 {
-	height: 131px;
-	background-color: rgb(234, 233, 231);
-	background-image: url('images/Special-Portal_10.png');
+	height: 113px;
+	background-color: rgb(250, 249, 247);
+	background-image: url('images/image_footer.png');
 }
