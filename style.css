@@ -36,23 +36,29 @@ ul {
 	padding: 0;
 	list-style: none;
 }
-
- ul.navigation {
- 	font-size: 14px;
+/* Maria */
+ul.navigation {
+    font-size: 14px;
     font-family: "Roboto";
     color: rgb(102, 102, 102);
- 	text-align: left;
- 	float: left;
- 	text-decoration: none;
- 	line-height: 40px;
+    text-align: left;
+    float: left;
+    text-decoration: none;
+    line-height: 40px;
 
- }
- ul.navigation li {
- 	display: inline;
- 	margin: 0;
- 	padding: 0 0 10px 70px;
- 	position: relative;
-  }
+}
+ul.navigation li {
+    height: 100%;
+    line-height: 41px;
+    display: inline-block;
+    margin: 0;
+    padding-left: 70px;
+    position: relative;
+}
+
+ul.navigation li a {
+    text-decoration: none;
+}
 
  .menu a {
  	color: rgb(47, 36, 30);
@@ -73,7 +79,7 @@ ul {
  	background-color: rgb(255, 255, 255);
  	position: absolute;
  	width: 940px;
- 	top: 30px;
+ 	top: 40px;
  	left: 30px;
  	display: none;
  }
@@ -94,6 +100,7 @@ ul {
  ul.navigation li:hover ul li:hover a{
  	  color: rgb(18, 120, 132);
  }
+/* Maria end*/
 
 #block03 {
     height: 699px;
