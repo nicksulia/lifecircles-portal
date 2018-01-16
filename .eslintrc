@@ -31,7 +31,6 @@
     "react/no-unknown-property": 1,
     "react/prop-types": 1,
     "react/react-in-jsx-scope": 1,
-    "react/self-closing-comp": 1,
     "react/sort-comp": 1,
     "react/jsx-wrap-multilines": 1,
     "no-console": 0,
@@ -39,7 +38,7 @@
     "strict": 0,
     "no-underscore-dangle": 0,
     "no-use-before-define": 0,
-    "eol-last": 0,
+    "eol-last": 1,
     "quotes": [1, "single"],
     "no-unused-vars": [2, {"vars": "local"}],
     "no-debugger": 1
