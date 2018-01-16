@@ -15,7 +15,7 @@ class SearchBar extends PureComponent {
                 'Kharkiv',
                 'Kherson',
                 'Khmelnytskyi',
-                'Kiev',
+                'Kyiv',
                 'Kropyvnytskyi',
                 'Luhansk',
                 'Lviv',

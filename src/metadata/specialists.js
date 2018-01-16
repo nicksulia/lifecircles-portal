@@ -76,7 +76,7 @@ export default
       'modified_date': '4 Jun 2017',
       'web_site': '-',
       'phone': '+38 096 665 5797',
-      'address': 'Prospect Vasyl Porika, 13-B, Kiev, 02000',
+      'address': 'Prospect Vasyl Porika, 13-B, Kyiv, 02000',
       'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['6-10', '11-16'],'diagnosis': ['autism'], 'price_level': ['high'] }
     },
 
