@@ -1,0 +1,47 @@
+.filters-button {
+    font-family: 'Roboto', serif;
+    background-color: #008e98;
+    color: #FFFFFF;
+    height: 30px;
+    width: 120px;
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    .select-plus-svg {
+        background-color: #FFF;
+        display: inline-block;
+        margin-left: 10px;
+        width: 20%;
+        height: 12px;
+        -webkit-mask-image: url("./add.svg");;
+        mask-image: url("./add.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 12px 12px;
+        mask-size: 12px 12px;
+    }
+    .select-minus-svg {
+        background-color: #FFF;
+        display: inline-block;
+        margin-left: 10px;
+        width: 20%;
+        height: 12px;
+        -webkit-mask-image: url("./remove.svg");;
+        mask-image: url("./remove.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 12px 12px;
+        mask-size: 12px 12px;
+    }
+    .select-button-text {
+        height: 15px;
+    }
+}
+
+.select-wrapper {
+    position: relative;
+    font-size: 14px;
+    width: 120px;
+    display: block;
+    margin-left: auto;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "filters",
+  "categories": {
+    "age":[ "0-1","2-5", "6-10", "11-16","17-30", "30+" ],
+    "diagnosis": ["autism", "dts"],
+    "price_level": ["free", "low", "medium", "high"],
+    "tags":[
+      "education",
+      "children",
+      "parents_included",
+      "rehabilitation"
+    ]
+  }
+}
