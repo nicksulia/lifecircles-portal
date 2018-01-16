@@ -1,24 +1,28 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import Select from '../../elements/select';
 
 class FilterBar extends PureComponent {
+
+    static propTypes = {
+        setBarStatus: PropTypes.func.isRequired,
+        isShown: PropTypes.bool.isRequired
+    };
+
     constructor(props) {
         super(props);
-        this.filterHandle = this.filterHandle.bind(this);
+        this.manipulateFilterBar = this.manipulateFilterBar.bind(this);
     }
 
-    componentDidUpdate(){
-        this.props.filterSpecialists(this.props.filters, this.props.specialists);
-    }
 
-    filterHandle(group, value, id) {
-        this.props.setFiltersList(group, value, id);
+    manipulateFilterBar() {
+        this.props.setBarStatus(!this.props.isShown);
     }
 
     render() {
         return (
 
-            <Select onHandleClick = {this.filterHandle}  groups={this.props.groups}/>
+            <Select onHandleClick = {this.manipulateFilterBar} barShown = {this.props.isShown}/>
         );
     }
 }

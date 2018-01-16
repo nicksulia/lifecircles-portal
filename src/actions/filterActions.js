@@ -12,3 +12,8 @@ export const setFiltersList = (groupName, value, id) => ({
     value,
     id
 });
+
+export const filtersBarStatus = (isShown) => ({
+    type: constants.SET_FILTER_BAR_STATUS,
+    isShown
+});

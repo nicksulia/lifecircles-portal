@@ -130,6 +130,7 @@ ul.navigation li:hover ul li:hover a{
 	width: 1000px;
 	margin: 0 auto;
 	height: 965px;
+	margin-top: 60px;
 }
 
 #events {

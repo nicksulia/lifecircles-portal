@@ -49,3 +49,7 @@ export const mapState = Object.freeze({
         "tags": []
     }
 });
+
+export const barState = Object.freeze({
+    barShown: false
+});

@@ -1,10 +1,6 @@
 export default (state) => {
-    const groups = state.filterState || {};
-    const specialists = state.mapState.specialists || [];
-    const filters = state.mapState.activeFilters || {};
+    const isShown = state.bar.barShown || false;
     return {
-        groups,
-        specialists,
-        filters
+        isShown
     };
 };

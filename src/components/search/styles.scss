@@ -100,7 +100,7 @@
 
 .search-bar-dropdown-list-wrapper {
   z-index: 1;
-  width: 200px;
+  width: 210px;
   left: 73.2%;
   top: 30px;
   background-color: #FFF;
@@ -109,5 +109,9 @@
   border-color: rgba(234, 233, 231, 0.5);
 }
 .search-bar-dropdown-list-element {
-
+  font-family: 'Roboto', serif;
+  z-index: 1;
+  background-color: #FFFFFF;
+  width: 100%;
 }
+

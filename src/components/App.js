@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import Map from '../containers/map/Map.js';
-import Search from '../components/search/Search.js';
+import Search from '../containers/search/Search.js';
 import './styles.scss';
 
 class App extends PureComponent {
