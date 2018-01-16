@@ -181,41 +181,42 @@ class App extends PureComponent {
                                     </div>
                                 </div>
                             </div>
-                            <div className="event-list-spacer"></div>
-                            <div className="event-list-day-header">Friday, February 23</div>
-                            <div className="event-list-item">
-                                <div className="event-list-item-date">
-                                    <div className="event-list-item-date-inner">4:15 PM</div>
-                                </div>
-                                <div className="event-list-item-main">
-                                    <div className="event-list-item-title">Individual program of development of the child with special needs</div>
-                                    <div className="event-list-item-bottom-row">
-                                        <div className="event-list-item-address">
-                                            The Institute of leadership and management of ICU<br/>
-                                            Kozelnytska 2a, Lviv, Ukraine, 79026
-                                        </div>
-                                        <div className="event-list-item-social">
-                                            <div className="event-list-item-social-inner">
-                                                <a href="#">facebook event</a>
+                            <div className="event-list-day">
+                                <div className="event-list-day-header">Friday, February 23</div>
+                                <div className="event-list-item">
+                                    <div className="event-list-item-date">
+                                        <div className="event-list-item-date-inner">4:15 PM</div>
+                                    </div>
+                                    <div className="event-list-item-main">
+                                        <div className="event-list-item-title">Individual program of development of the child with special needs</div>
+                                        <div className="event-list-item-bottom-row">
+                                            <div className="event-list-item-address">
+                                                The Institute of leadership and management of ICU<br/>
+                                                Kozelnytska 2a, Lviv, Ukraine, 79026
+                                            </div>
+                                            <div className="event-list-item-social">
+                                                <div className="event-list-item-social-inner">
+                                                    <a href="#">facebook event</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="event-list-item">
-                                <div className="event-list-item-date">
-                                    <div className="event-list-item-date-inner">7:00 PM</div>
-                                </div>
-                                <div className="event-list-item-main">
-                                    <div className="event-list-item-title">International Tutoring Congress</div>
-                                    <div className="event-list-item-bottom-row">
-                                        <div className="event-list-item-address">
-                                            International Academy of Tutoring<br/>
-                                            вул. А. Головка, 13/1, Київ, 03101
-                                        </div>
-                                        <div className="event-list-item-social">
-                                            <div className="event-list-item-social-inner">
-                                                <a href="#">facebook event</a>
+                                <div className="event-list-item">
+                                    <div className="event-list-item-date">
+                                        <div className="event-list-item-date-inner">7:00 PM</div>
+                                    </div>
+                                    <div className="event-list-item-main">
+                                        <div className="event-list-item-title">International Tutoring Congress</div>
+                                        <div className="event-list-item-bottom-row">
+                                            <div className="event-list-item-address">
+                                                International Academy of Tutoring<br/>
+                                                вул. А. Головка, 13/1, Київ, 03101
+                                            </div>
+                                            <div className="event-list-item-social">
+                                                <div className="event-list-item-social-inner">
+                                                    <a href="#">facebook event</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

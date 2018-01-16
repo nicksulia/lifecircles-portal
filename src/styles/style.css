@@ -135,7 +135,6 @@ ul.navigation li:hover ul li:hover a{
 }
 
 #events {
-	height: 1023px;
 	background-color: rgb(234, 233, 231);
 }
 
@@ -163,7 +162,10 @@ ul.navigation li:hover ul li:hover a{
 
 .event-list {
 	flex: 1;
-	height: 800px;
+}
+
+.event-list-day {
+	margin-bottom: 52px;
 }
 
 .event-list-day-header {
@@ -244,10 +246,6 @@ ul.navigation li:hover ul li:hover a{
 	background-image: url('images/facebook.svg');
 	background-size: 16px;
 	background-repeat: no-repeat;
-}
-
-.event-list-spacer {
-	height: 36px;
 }
 
 .event-calendar-header {
