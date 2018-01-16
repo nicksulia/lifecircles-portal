@@ -16,14 +16,14 @@ h2 {
 }
 
 .section-header {
-	font-family: 'Roboto', serif;
+	font-family: Roboto, sans-serif;
 	font-size: 32px;
 	margin-bottom: 40px;
 	text-align: center;
 }
 
 .section-footer {
-	font-family: 'Roboto', serif;
+	font-family: Roboto, sans-serif;
 	font-size: 14px;
 	text-align: center;
 	line-height: 130px;
@@ -55,7 +55,7 @@ ul {
 /* Maria */
 ul.navigation {
 	font-size: 14px;
-	font-family: "Roboto";
+	font-family: Roboto, sans-serif;
 	color: rgb(102, 102, 102);
 	text-align: left;
 	float: left;
@@ -110,7 +110,7 @@ ul.navigation li:hover ul {
 
 ul.navigation li:hover a{
 	color: rgb(18, 120, 132);
-	background-position: 0 0px;
+	background-position: 0 0;
 }
 ul.navigation li:hover ul a{
 	color: rgb(47, 36, 30);
