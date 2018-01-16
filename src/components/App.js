@@ -49,7 +49,7 @@ class App extends PureComponent {
                         <div className="event-calendar">
                             <div className="event-calendar-header">
                                 <div className="event-calendar-header-arrow event-calendar-header-arrow-l"></div>
-                                <div className="event-calendar-header-inner">December 2017</div>
+                                <div className="event-calendar-header-inner">February 2018</div>
                                 <div className="event-calendar-header-arrow event-calendar-header-arrow-r"></div>
                             </div>
                             <hr className="event-calendar-divider"/>
@@ -103,7 +103,7 @@ class App extends PureComponent {
                         </div>
                         <div className="event-list">
                             <div className="event-list-day">
-                                <div className="event-list-day-header">Thursday, December 22</div>
+                                <div className="event-list-day-header">Thursday, February 22</div>
                                 <div className="event-list-item">
                                     <div className="event-list-item-date">
                                         <div className="event-list-item-date-inner">4:15 PM</div>
@@ -182,7 +182,7 @@ class App extends PureComponent {
                                 </div>
                             </div>
                             <div className="event-list-spacer"></div>
-                            <div className="event-list-day-header">Friday, December 23</div>
+                            <div className="event-list-day-header">Friday, February 23</div>
                             <div className="event-list-item">
                                 <div className="event-list-item-date">
                                     <div className="event-list-item-date-inner">4:15 PM</div>
