@@ -37,7 +37,7 @@ class App extends PureComponent {
                     </ul>
                 </div>
                 <div className="block" id="block03"></div>
-                <div className="block" id="block04">
+                <div className="block" id="map">
                     <div className = "section-header">ORGANIZATIONS AND SPECIALISTS</div>
                     <Search/>
                     <Map/>
