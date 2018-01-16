@@ -8,7 +8,7 @@ export default handleActions({
     [ACTIONS.SET_FILTERS_LIST]: (state, { groupName, id }) => {
         let options = [...state[groupName].options].map(option => ({...option}));
         let group = {label: state[groupName].label, options};
-        group.options[id]["checked"] = !group.options[id]["checked"];
+        group.options[id]['checked'] = !group.options[id]['checked'];
         return {
             ...state,
             [groupName]: group

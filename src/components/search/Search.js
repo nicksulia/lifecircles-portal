@@ -40,7 +40,7 @@ class Search extends PureComponent {
                                                 this.props.groups[group].options.map((option, id) => {
                                                     return (
                                                         <div key = {option.value} className="categories-element" onClick={() => { this.props.setFiltersList(group, option.value, id) }}>
-                                                            <span className="checkbox-container"><span className={option.checked ? "checkbox-checked" : ""}/></span>
+                                                            <span className="checkbox-container"><span className={option.checked ? 'checkbox-checked' : ''}/></span>
                                                             <span>{option.label}</span>
                                                         </div>
                                                     )
