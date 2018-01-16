@@ -136,6 +136,7 @@ ul.navigation li:hover ul li:hover a{
 
 #events {
     background-color: rgb(234, 233, 231);
+    padding-bottom: 4px;
 }
 
 #block06 {
