@@ -30,7 +30,7 @@ class Search extends PureComponent {
                 <div>
                     {
                         this.props.barShown &&
-                        <div className="select-dropdown">
+                        <div className="select-categories-container">
                             {
                                 Object.keys(this.props.groups).map((group) => {
                                     return (
@@ -39,8 +39,9 @@ class Search extends PureComponent {
                                             {
                                                 this.props.groups[group].options.map((option, id) => {
                                                     return (
-                                                        <div key = {option.value} onClick={() => { this.props.setFiltersList(group, option.value, id) }}>
-                                                            <span>[{option.checked ? "x" : " "}]</span><span>{option.label}</span>
+                                                        <div key = {option.value} className="categories-element" onClick={() => { this.props.setFiltersList(group, option.value, id) }}>
+                                                            <span className="checkbox-container"><span className={option.checked ? "checkbox-checked" : ""}/></span>
+                                                            <span>{option.label}</span>
                                                         </div>
                                                     )
                                                 })

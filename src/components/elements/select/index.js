@@ -22,7 +22,7 @@ class Select extends PureComponent {
             <div className="select-wrapper">
                 <div className="filters-button" onClick={this.props.onHandleClick}>
                     <div className={this.props.barShown? `select-minus-svg` :`select-plus-svg`}/>
-                    <div className="select-button-text">Add Filters</div>
+                    <div className="select-button-text">Add filters</div>
                 </div>
             </div>
         );

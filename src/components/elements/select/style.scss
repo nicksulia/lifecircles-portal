@@ -20,6 +20,19 @@
         -webkit-mask-size: 12px 12px;
         mask-size: 12px 12px;
     }
+    .select-minus-svg {
+        background-color: #FFF;
+        display: inline-block;
+        margin-left: 10px;
+        width: 20%;
+        height: 12px;
+        -webkit-mask-image: url("./remove.svg");;
+        mask-image: url("./remove.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 12px 12px;
+        mask-size: 12px 12px;
+    }
     .select-button-text {
         height: 15px;
     }

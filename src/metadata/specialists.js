@@ -2,6 +2,7 @@ export default
 [
     {
       "id": "0001",
+	  "recommended": 35,
       "name" : "Blahodiyna Orhanizatsiya 'Shkola-Skhodynky'",
       "description" : "Charitable organization 'School-stepping' is founded with the purpose of creating the proper conditions for the complex rehabilitation of children with autism spectrum disorders (education, upbringing and correctional work) at the age from 1.5 to 30 years; provision of social and methodological support to families and teachers.",
       "expirience": "10 years",
@@ -17,6 +18,7 @@ export default
 
     {
       "id": "0002",
+	  "recommended": 33,
       "name" : "Tomatis-Kiev",
       "description" : "Charitable organization 'School-stepping' is founded with the purpose of creating the proper conditions for the complex rehabilitation of children with autism spectrum disorders (education, upbringing and correctional work) at the age from 1.5 to 30 years; provision of social and methodological support to families and teachers.",
       "expirience": "2 years",
@@ -32,6 +34,7 @@ export default
 
     {
       "id": "0003",
+	  "recommended": 21,
       "name" : "CFR Krok for crochet (physical and psychological rehabilitation of children with cerebral palsy)",
       "description" : "Our specialists are not just medical professionals, but like-minded people and partners, for whom each new patient is a personal challenge to their professionalism and talent. The tasks of which - to pick up a set of such exercises and loads that are suitable for this small patient, and with which he will be perfectly able to cope. Therefore, classes in our center can start from 30 minutes at the beginning of the course and reach up to one hour after a couple of classes.",
       "expirience": "1 year",
@@ -47,6 +50,7 @@ export default
 
     {
       "id": "0004",
+	  "recommended": 67,
       "name" : "Sonyachne Kolo",
       "description" : "Public Association for the Support of Autistic Persons 'Sonyachne Kolo'",
       "expirience": "4 years",
@@ -62,6 +66,7 @@ export default
 
     {
       "id": "0005",
+	  "recommended": 49,
       "name" : "Center for Brain Stimulation",
       "description" : "Center for Brain Stimulation",
       "expirience": "8 years",
@@ -77,6 +82,7 @@ export default
 
     {
       "id": "0006",
+	  "recommended": 22,
       "name" : "ABA Therapy Center",
       "description" : "ABA Therapy Center is an organization dedicated to training and rehabilitation of children with autism, autistic spectrum disorders and other developmental delays based on ABA. ABA (Applied Behavior Analysis) - Applied behavior analysis is a method that uses manipulation of factors in the environment to learn the desired and correct unwanted behavior. The ABA method is a method of training, through which it is possible to correct undesirable behavior, to teach various skills (social, communal, academic, etc.) regardless of the level of development of the child. At this stage ABA is the only method of rehabilitation of children with autism, whose effectiveness is confirmed in the scientific literature.",
       "expirience": "4 years",
@@ -92,6 +98,7 @@ export default
 
     {
       "id": "0007",
+	  "recommended": 11,
       "name" : "The child with the future",
       "description" : "'The child with the future' is an exclusive correctional institution for children with early childhood autism (IDA), autistic personality traits, delayed speech and psycho-speech development, hyperactivity (ADHD), a well-considered system of education and upbringing taking into account individual characteristics and the level of development of each baby. The effectiveness of our educational techniques and teaching materials has already been tested in practice, and the use of game techniques and rules allows you to interest the child and set it up for training. We are not only engaged in the education and development of the child, but we also teach him to communicate with peers and independently manage in everyday life. All our professional activities are aimed at providing the opportunity to creatively and individually develop, to become more intelligent and intelligent, to acquire the confidence and skills of independence for every child who falls into the atmosphere of joy and love of our kindergarten.",
       "expirience": "12 years",
