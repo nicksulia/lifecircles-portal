@@ -1,13 +1,32 @@
 .control-panel {
+  border-top: 3px solid #faf9f7;
   background-color: #faf9f7;
   padding: 0 15px;
+}
+.filters-open {
+  position: relative;
+  &:before {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -3px;
+    display: block;
+    content: "";
+    height: 3px;
+    padding: 0;
+    background: linear-gradient(to right, darken(#008e98, 5%), lighten(#008e98, 5%));
+  }
 }
 
 .select-categories-container {
   display: flex;
   flex: 1;
+  padding-bottom: 20px;
   &> div {
     margin-left: 45px;
+    &> div:first-child {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -25,7 +44,7 @@
 }
 
 .checkbox-checked {
-  display: inline-block;
+  display: block;
   background-color: #008e98;
   width: 12px;
   height: 12px;

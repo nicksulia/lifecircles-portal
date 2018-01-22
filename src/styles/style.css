@@ -43,83 +43,10 @@ h2 {
 
 #block02 {
 	height: 40px;
-	background-color: rgb(250, 249, 247);
-	background-image: url('images/image_navigation.png');
-}
-
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-/* Maria */
-ul.navigation {
-	font-size: 14px;
-	font-family: "Roboto";
-	color: rgb(102, 102, 102);
-	text-align: left;
-	float: left;
-	text-decoration: none;
-	line-height: 40px;
-
-}
-ul.navigation li {
-	height: 100%;
-	line-height: 41px;
-	display: inline-block;
-	margin: 0;
-	padding-left: 70px;
 	position: relative;
+	background-color: rgb(250, 249, 247);
 }
 
-ul.navigation li a {
-	text-decoration: none;
-}
-
-.menu a {
-	color: rgb(47, 36, 30);
-	text-decoration: none;
-}
-
-ul.navigation li:hover a {
-	color: rgb(18, 120, 132);
-	font-weight: bold;
-	text-decoration: none;
-}
-
-ul.navigation li ul li {
-	padding: 0;
-	line-height: 40px;
-}
-ul li ul {
-	background-color: rgb(255, 255, 255);
-	position: absolute;
-	width: 940px;
-	top: 40px;
-	left: 30px;
-	display: none;
-}
-
-ul.navigation li ul:hover,
-ul.navigation li:hover ul {
-	display: inline-flex;
-	flex: 1;
-	align-items: center;
-	justify-content: space-around;
-}
-
-ul.navigation li:hover a{
-	color: rgb(18, 120, 132);
-	background-position: 0 0px;
-}
-ul.navigation li:hover ul a{
-	color: rgb(47, 36, 30);
-}
-
-ul.navigation li:hover ul li:hover a{
-	color: rgb(18, 120, 132);
-}
-/* Maria end*/
 
 #block03 {
 	height: 699px;
@@ -130,7 +57,6 @@ ul.navigation li:hover ul li:hover a{
 #block04 {
 	width: 1000px;
 	margin: 0 auto;
-	height: 965px;
 	margin-top: 60px;
 }
 
