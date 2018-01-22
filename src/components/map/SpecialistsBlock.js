@@ -11,7 +11,7 @@ class SpecialistsBlock extends PureComponent {
         return (
             <div className="specialist-info-list-elements-wrapper">
                 {
-                    this.props.displayedSpecialist ? <VisitCard data = {this.props.displayedSpecialist} hide = {this.props.hideSpecialist}/> :
+                    this.props.displayedSpecialist ? <VisitCard displayDetails = {this.props.displayDetails} data = {this.props.displayedSpecialist} hide = {this.props.hideSpecialist}/> :
                     (this.props.specialists ?
                         this.props.specialists.map((specialist) => {
                             return (

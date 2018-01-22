@@ -45,7 +45,7 @@ export default
       'web_site': 'cfr-krok.ua',
       'phone': '+38 044 587 8767',
       'address': 'Ivana Dyachenka str., 20 В, Kyiv, 02000',
-      'categories': { 'tags':['reabilitation' ,'children'], 'age':['6-10', '11-16'], 'diagnosis': ['dts'], 'price_level': ['medium'] }
+      'categories': { 'tags':['reabilitation' ,'children'], 'age':['6-10', '11-16'], 'diagnosis': ['cerebral', 'hearing'], 'price_level': ['medium'] }
     },
 
     {
@@ -99,8 +99,8 @@ export default
     {
       'id': '0007',
         'recommended': 11,
-      'name' : 'The child with the future',
-      'description' : '\'The child with the future\' is an exclusive correctional institution for children with early childhood autism (IDA), autistic personality traits, delayed speech and psycho-speech development, hyperactivity (ADHD), a well-considered system of education and upbringing taking into account individual characteristics and the level of development of each baby. The effectiveness of our educational techniques and teaching materials has already been tested in practice, and the use of game techniques and rules allows you to interest the child and set it up for training. We are not only engaged in the education and development of the child, but we also teach him to communicate with peers and independently manage in everyday life. All our professional activities are aimed at providing the opportunity to creatively and individually develop, to become more intelligent and intelligent, to acquire the confidence and skills of independence for every child who falls into the atmosphere of joy and love of our kindergarten.',
+      'name' : 'Children with future',
+      'description' : '\'Children with future\' is an exclusive correctional institution for children with early childhood autism (IDA), autistic personality traits, delayed speech and psycho-speech development, hyperactivity (ADHD), a well-considered system of education and upbringing taking into account individual characteristics and the level of development of each baby. The effectiveness of our educational techniques and teaching materials has already been tested in practice, and the use of game techniques and rules allows you to interest the child and set it up for training. We are not only engaged in the education and development of the child, but we also teach him to communicate with peers and independently manage in everyday life. All our professional activities are aimed at providing the opportunity to creatively and individually develop, to become more intelligent and intelligent, to acquire the confidence and skills of independence for every child who falls into the atmosphere of joy and love of our kindergarten.',
       'expirience': '12 years',
       'longitude': '30.428992',
       'latitude': '50.433645',

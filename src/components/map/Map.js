@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import './style.scss';
 
+import SpecialistDetailsCard from './SpecialistDetailsCard.js';
 import SpecialistsBlock from './SpecialistsBlock.js';
 const { compose, withProps, withHandlers } = require('recompose');
 const {
@@ -56,6 +57,17 @@ const MapWithAMarkerClusterer = compose(
 class DemoApp extends PureComponent {
     constructor(props){
         super(props);
+        this.state = {
+            detailsIsDisplayed: false
+        };
+
+        this.displayDetails = this.displayDetails.bind(this);
+    }
+
+    displayDetails() {
+        this.setState({
+            detailsIsDisplayed: !this.state.detailsIsDisplayed
+        })
     }
 
     componentWillMount(){
@@ -65,7 +77,8 @@ class DemoApp extends PureComponent {
         console.log(this.props);
         return (
             <div className = "map-component-wrapper" >
-                <SpecialistsBlock specialists = {this.props.filteredSpecialists} displaySpecialist = {this.props.setSpecialist} hideSpecialist = {this.props.setSpecialist} displayedSpecialist = {this.props.displayedSpecialist}/>
+                {this.state.detailsIsDisplayed && <SpecialistDetailsCard displayedSpecialist = {this.props.displayedSpecialist} displayDetails = {this.displayDetails} />}
+                <SpecialistsBlock displayDetails = {this.displayDetails} specialists = {this.props.filteredSpecialists} displaySpecialist = {this.props.setSpecialist} hideSpecialist = {this.props.setSpecialist} displayedSpecialist = {this.props.displayedSpecialist}/>
                 <MapWithAMarkerClusterer markers={this.props.filteredSpecialists} displaySpecialist = {this.props.setSpecialist}/>
             </div>
         )
