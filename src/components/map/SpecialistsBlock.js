@@ -9,7 +9,7 @@ class SpecialistsBlock extends PureComponent {
 
     render() {
         return (
-            <div className="specialist-info-list-elements-wrapper">
+            <div className={`specialist-info-list-elements-wrapper ${this.props.displayedSpecialist ? '' : 'specialist-list-setted'}`}>
                 {
                     this.props.displayedSpecialist ? <VisitCard displayDetails = {this.props.displayDetails} data = {this.props.displayedSpecialist} hide = {this.props.hideSpecialist}/> :
                     (this.props.specialists ?

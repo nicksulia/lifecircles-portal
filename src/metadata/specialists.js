@@ -35,7 +35,7 @@ export default
     {
       'id': '0003',
         'recommended': 21,
-      'name' : 'CFR Krok for crochet (physical and psychological rehabilitation of children with cerebral palsy)',
+      'name' : 'CFR Krok for crochet',
       'description' : 'Our specialists are not just medical professionals, but like-minded people and partners, for whom each new patient is a personal challenge to their professionalism and talent. The tasks of which - to pick up a set of such exercises and loads that are suitable for this small patient, and with which he will be perfectly able to cope. Therefore, classes in our center can start from 30 minutes at the beginning of the course and reach up to one hour after a couple of classes.',
       'expirience': '1 year',
       'longitude': '30.484250',

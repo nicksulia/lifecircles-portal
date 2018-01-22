@@ -26,7 +26,7 @@ class SpecialistVisitCard extends PureComponent {
 
     render() {
         return (
-            <div className="specialist-info-visit-elements-wrapper">
+            <div className={`specialist-info-visit-elements-wrapper`}>
                 <div className="exit-arrow-wrapper"  onClick={() => { this.props.displayDetails(); this.props.hide(null) } }>
                     <span className="exit-arrow-container">
                         <span className="exit-arrow-icon"/>
@@ -62,7 +62,7 @@ class SpecialistVisitCard extends PureComponent {
                 </div>
                 <div className="specialist-info-visit-element">
                     <span></span>
-                    <span className="regular-font-weight"><span className="people-recommended">{this.props.data.recommended} people</span> can tell about {this.props.data.name}</span>
+                    <span className="regular-font-weight"><span className="people-recommended">{this.props.data.recommended} people</span><div className="people-recommendations-block"></div> can tell about {this.props.data.name}</span>
                 </div>
                 <div className="specialist-info-visit-element">
                     <div className="recommend-button">I'm ready to share my experience!</div>

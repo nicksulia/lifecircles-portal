@@ -8,6 +8,8 @@
   background-color: #eae9e7;
   -webkit-box-shadow: 5px 0 5px -2px rgba(0,0,0,0.1);
   box-shadow: 5px 0 5px -2px rgba(0,0,0,0.1);
+}
+.specialist-list-setted {
   overflow-y: auto;
 }
 
@@ -23,7 +25,6 @@
   background-color: #eae9e7;
   -webkit-box-shadow: 5px 0 5px -2px rgba(0,0,0,0.1);
   box-shadow: 5px 0 5px -2px rgba(0,0,0,0.1);
-  overflow-y: auto;
   -webkit-align-items: center;
   align-items: center;
 }
@@ -160,10 +161,28 @@
 .people-recommended {
   cursor: pointer;
   border-bottom: 1px dashed #000;
+  &:hover + .people-recommendations-block {
+    display: block;
+  }
+}
+.people-recommendations-block {
+  position: absolute;
+  z-index: 9999;
+  display: none;
+  cursor: pointer;
+  background-image: url(/images/recommendations_block.png);
+  background-repeat: no-repeat;
+  background-size: 470px 330px;
+  bottom: 100%;
+  left: -35%;
+  width: 470px;
+  height: 330px;
+  background-color: #FFF;
   &:hover {
-
+    display: block;
   }
 }
 .regular-font-weight {
+  position: relative;
   font-weight: 400;
 }
