@@ -4,7 +4,7 @@
   "description": "Portal for people with needs",
   "scripts": {
     "build": "webpack --display-error-details",
-    "lint": "eslint --format 'node_modules/eslint-friendly-formatter' . --ext .js --ext .jsx",
+    "lint": "eslint --fix --format node_modules/eslint-friendly-formatter . --ext .js --ext .jsx",
     "watch": "webpack --config webpack.config.js --display-modules --watch --progress",
     "server": "webpack-dev-server --content-base dist/ --host 172.22.197.39",
     "server:localhost": "webpack-dev-server --content-base dist/"
@@ -51,6 +51,7 @@
     "css-loader": "^0.28.7",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",

@@ -22,7 +22,7 @@ class Search extends PureComponent {
 
     render() {
         return (
-            <div className="control-panel">
+            <div className={`control-panel ${this.props.barShown ? 'filters-open' : ''}`}>
                 <div className="search-panel-wrapper">
                     <SearchBar/>
                     <FilterBar/>

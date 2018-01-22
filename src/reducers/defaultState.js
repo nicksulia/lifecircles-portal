@@ -14,7 +14,11 @@ export const filterState = Object.freeze({
         label: 'Diagnosis',
         options:[
             {label: 'Autism', value:'autism', checked: false},
-            {label: 'DTS', value:'dts', checked: false},
+            {label: 'Cerebral palsy', value:'cerebral', checked: false},
+            {label: 'Down syndrome', value:'down', checked: false},
+            {label: 'Hearing impairment', value:'hearing', checked: false},
+            {label: 'Speech disturbance', value:'speech', checked: false},
+            {label: 'Vision disorder', value:'vision', checked: false},
         ]
     },
     'price_level': {

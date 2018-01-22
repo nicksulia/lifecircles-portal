@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import Map from '../containers/map/Map.js';
 import Search from '../containers/search/Search.js';
+import Wiki from './elements/WikiComponent.js';
 import './styles.scss';
+
 
 class App extends PureComponent {
     render() {
@@ -9,39 +11,14 @@ class App extends PureComponent {
             <div>
                 <div className="block" id="block01"></div>
                 <div className="block" id="block02">
-                    <ul className="navigation">
-                        <li><a href="#">Medical</a>
-                            <ul>
-                                <li><a href="#">Medical1</a></li>
-                                <li><a href="#">Medical2</a></li>
-                                <li><a href="#">Medical3</a></li>
-                                <li><a href="#">Medical4</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Education</a>
-                            <ul>
-                                <li><a href="#">Education1</a></li>
-                                <li><a href="#">Education2</a></li>
-                                <li><a href="#">Education2</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Socialization</a>
-                            <ul>
-                                <li><a href="#">Socialization1</a></li>
-                                <li><a href="#">Socialization2</a></li>
-                                <li><a href="#">Socialization3</a></li>
-                                <li><a href="#">Socialization4</a></li>
-                                <li><a href="#">Socialization5</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <Wiki/>
                 </div>
                 <div className="block" id="block03"></div>
                 <div className="block" id="map">
                     <div className = "section-header">ORGANIZATIONS AND SPECIALISTS</div>
                     <Search/>
                     <Map/>
-                    <div className = "section-footer"><i className="heart-icon"/>Share your experience. <a href="#">Add an organization</a> you can recommend.</div>
+                    <div className = "section-footer"><i className="heart-icon"/><span className="section-footer-text-addition">Share your experience. <a href="#">Add an organization</a> you can recommend.</span></div>
                 </div>
                 <div className="block" id="events">
                     <h2>EVENTS</h2>
