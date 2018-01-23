@@ -41,6 +41,14 @@ h2 {
     background-image: url('images/image_header.png');
 }
 
+#wiki {
+    height: 635px;
+    background-image: url('images/wiki_lorem.png');
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
 #block02 {
 	height: 40px;
 	position: relative;

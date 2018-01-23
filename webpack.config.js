@@ -42,7 +42,7 @@ module.exports = {
     },
     plugins: [
         new CopyWebpackPlugin([{
-            from: 'src/index.html',
+            from: 'src/*.html',
             to: './',
             flatten: true
         }]),
