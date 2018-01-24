@@ -59,6 +59,7 @@ p {
 }
 
 #block01 {
+    background-size: 980px 90px;
     cursor: pointer;
     height: 90px;
     background-image: url('images/image_header.png');
@@ -76,6 +77,7 @@ p {
 
 #block03 {
     height: 699px;
+    background-size: 980px 699px;
     background-color: rgb(234, 233, 231);
     background-image: url('images/image_welcome.png');
 }
@@ -94,6 +96,7 @@ p {
     height: 113px;
     background-color: rgb(250, 249, 247);
     background-image: url('images/image_footer.png');
+    background-size: 980px 113px;
 }
 
 .column-layout {
