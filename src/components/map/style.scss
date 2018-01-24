@@ -34,27 +34,6 @@
   cursor: pointer;
 }
 
-.specialist-info-visit-element {
-  padding-bottom: 10px;
-  font-size: 14px;
-  width: 270px;
-  font-weight: 700;
-  &> span {
-    display: block;
-  }
-  &> .recommend-button {
-    background-color: #008e98;
-    color: #FFF;
-    text-align: center;
-    height: 30px;
-    line-height: 30px;
-    font-weight: 400;
-    &:hover {
-      cursor: pointer;
-      background-color: darken(#008e98, 5%);
-    }
-  }
-}
 .specialist-info-visit-element-title {
   font-weight: 400;
   color: rgb(102, 102, 102);
@@ -177,7 +156,7 @@
   left: -35%;
   width: 470px;
   height: 330px;
-  background-color: #FFF;
+  background-color: transparent;
   &:hover {
     display: block;
   }
@@ -185,4 +164,48 @@
 .regular-font-weight {
   position: relative;
   font-weight: 400;
+}
+
+
+.specialist-info-visit-element {
+  position: relative;
+  padding-bottom: 10px;
+  font-size: 14px;
+  width: 270px;
+  font-weight: 700;
+  &> span {
+    display: block;
+  }
+  &> .recommend-button {
+    background-color: #008e98;
+    color: #FFF;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    &:hover {
+      cursor: pointer;
+      background-color: darken(#008e98, 5%);
+      & + div.tooltip-recommend {
+        display: block;
+      }
+    }
+
+  }
+
+}
+
+.tooltip-recommend {
+  position: absolute;
+  z-index: 9999;
+  display: none;
+  cursor: pointer;
+  right: 30%;
+  top: 70%;
+  background-image: url(/images/tooltip_recommend.png);
+  background-repeat: no-repeat;
+  background-size: 237px 134px;
+  width: 237px;
+  height: 134px;
+  background-color: transparent;
 }

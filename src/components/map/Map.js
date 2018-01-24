@@ -64,10 +64,16 @@ class DemoApp extends PureComponent {
         this.displayDetails = this.displayDetails.bind(this);
     }
 
-    displayDetails() {
-        this.setState({
-            detailsIsDisplayed: !this.state.detailsIsDisplayed
-        })
+    displayDetails(check) {
+        if (check && typeof check === 'boolean') {
+            this.setState({
+                detailsIsDisplayed: false
+            });
+        } else {
+            this.setState({
+                detailsIsDisplayed: !this.state.detailsIsDisplayed
+            })
+        }
     }
 
     componentWillMount(){
