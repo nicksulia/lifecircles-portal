@@ -2,8 +2,7 @@ export const filterState = Object.freeze({
     'age':{
         label: 'Kid\'s age',
         options: [
-            {label: 'From 0 to 1', value:'0-1', checked: false},
-            {label: 'From 2 to 5', value:'2-5', checked: false},
+            {label: 'From 0 to 5', value:'0-5', checked: false},
             {label: 'From 6 to 10', value:'6-10', checked: false},
             {label: 'From 11 to 16', value:'11-16', checked: false},
             {label: 'From 17 to 30', value:'17-30', checked: false},
@@ -22,12 +21,13 @@ export const filterState = Object.freeze({
         ]
     },
     'price_level': {
-        label:'Payment',
+        label:'Organization Type',
         options:[
-            {label: 'Free', value:'free', checked: false},
-            {label: 'Low', value:'low', checked: false},
-            {label: 'Medium', value:'medium', checked: false},
-            {label: 'High', value:'high', checked: false},
+            {label: 'All', value:'all', checked: false},
+            {label: 'Charity', value:'charity', checked: false},
+            {label: 'Government', value:'government', checked: false},
+            {label: 'Private', value:'private', checked: false},
+            {label: 'Not defined', value:'not_defined', checked: false},
         ]
     },
     'tags': {

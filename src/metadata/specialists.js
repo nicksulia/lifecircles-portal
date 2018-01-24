@@ -13,7 +13,7 @@ export default
       'web_site': 'shodinki.com',
       'phone': '+38 067 466 0437',
       'address': 'Zabolotnogo str., 146, Kyiv, 02000',
-      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':[ '0-1','2-5', '6-10', '11-16','17-30', '30+'], 'diagnosis': ['autism'], 'price_level': ['high'] }
+      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':[ '0-5', '6-10', '11-16','17-30', '30+'], 'diagnosis': ['autism'],'price_level': ['private'] }
     },
 
     {
@@ -29,7 +29,7 @@ export default
       'web_site': 'tomatis-kiev.com.ua',
       'phone': '+38 063 473 7964',
       'address': 'Chornovola str., 25, Kyiv, 01135',
-      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['6-10', '11-16'], 'diagnosis': ['autism'], 'price_level': ['medium'] }
+      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['6-10', '11-16'], 'diagnosis': ['autism'], 'price_level': ['charity']}
     },
 
     {
@@ -45,7 +45,7 @@ export default
       'web_site': 'cfr-krok.ua',
       'phone': '+38 044 587 8767',
       'address': 'Ivana Dyachenka str., 20 В, Kyiv, 02000',
-      'categories': { 'tags':['reabilitation' ,'children'], 'age':['6-10', '11-16'], 'diagnosis': ['cerebral', 'hearing'], 'price_level': ['medium'] }
+      'categories': { 'tags':['reabilitation' ,'children'], 'age':['6-10', '11-16'], 'diagnosis': ['cerebral', 'hearing'], 'price_level': [ 'private' ]}
     },
 
     {
@@ -61,7 +61,7 @@ export default
       'web_site': '-',
       'phone': '+38 044 383 6136',
       'address': 'Kharkiv highway, 121/3, Kyiv, 02000',
-      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['6-10', '11-16', '17-35'], 'diagnosis': ['autism'], 'price_level': ['free'] }
+      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['0-5','6-10', '11-16', '17-30'], 'diagnosis': ['autism'], 'price_level': ['government' ] }
     },
 
     {
@@ -77,7 +77,7 @@ export default
       'web_site': '-',
       'phone': '+38 096 665 5797',
       'address': 'Prospect Vasyl Porika, 13-B, Kiev, 02000',
-      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['6-10', '11-16'],'diagnosis': ['autism'], 'price_level': ['high'] }
+      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['6-10', '11-16'],'diagnosis': ['autism'], 'price_level': ['not_defined'] }
     },
 
     {
@@ -93,7 +93,7 @@ export default
       'web_site': 'aba-therapy.com.ua',
       'phone': '+38 094 926 4323',
       'address': 'Vsevolod Nestyka str., 5,4, Kyiv 02000',
-      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['6-10', '11-16'],'diagnosis': ['cerebral', 'hearing', 'down', 'vision'], 'price_level': ['low'] }
+      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['6-10', '11-16'],'diagnosis': ['cerebral', 'hearing', 'down', 'vision'], 'price_level': ['not_defined' ] }
     },
 
     {
@@ -109,7 +109,7 @@ export default
       'web_site': 'childfuture.kiev.ua',
       'phone': '+38 050 352 90 97',
       'address': 'Heroes of Sevastopol str, 41/15, Kyiv, 03061',
-      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['6-10', '11-16'],'diagnosis': ['autism', 'hearing', 'down', 'cerebral'], 'price_level': ['low'] }
+      'categories':{ 'tags':['education' ,'children', 'parents_included'], 'age':['6-10', '11-16'],'diagnosis': ['autism', 'hearing', 'down', 'cerebral'], 'price_level': ['charity' ] }
     }
 
 ]
