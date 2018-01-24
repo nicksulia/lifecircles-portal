@@ -5,7 +5,6 @@ module.exports = {
     entry: path.resolve(__dirname, './src/index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/assets/',
         filename: 'bundle.js'
     },
     devtool: 'source-map',
@@ -47,12 +46,12 @@ module.exports = {
             flatten: true
         }]),
         new CopyWebpackPlugin([{
-            from: 'src/styles/style.css',
+            from: 'src/style.css',
             to: './',
             flatten: true
         }]),
         new CopyWebpackPlugin([{
-            from: 'images/',
+            from: 'src/images/',
             to: './images/',
             flatten: true
         }]),

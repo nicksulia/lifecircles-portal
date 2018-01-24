@@ -1,0 +1,284 @@
+body {
+    margin-top: 0;
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    color: rgb(0, 142, 152);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 53px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 19px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    line-height: 136%;
+    color: rgb(102, 102, 102);
+}
+
+.section-header {
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-footer {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 130px;
+    height: 130px;
+
+}
+
+.block {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#block01 {
+    cursor: pointer;
+    height: 90px;
+    background-image: url('images/image_header.png');
+}
+
+#wiki {
+    height: 635px;
+}
+
+#block02 {
+	height: 40px;
+	position: relative;
+	background-color: rgb(250, 249, 247);
+}
+
+#block03 {
+    height: 699px;
+    background-color: rgb(234, 233, 231);
+    background-image: url('images/image_welcome.png');
+}
+
+#map {
+    width: 1000px;
+    margin: 60px auto 0;
+}
+
+#events {
+    background-color: rgb(234, 233, 231);
+    padding-bottom: 4px;
+}
+
+#block06 {
+    height: 113px;
+    background-color: rgb(250, 249, 247);
+    background-image: url('images/image_footer.png');
+}
+
+.column-layout {
+    display: flex;
+    flex-direction: row;
+    width: 940px;
+    margin: auto;
+}
+
+.event-calendar {
+    flex: initial;
+    width: 261px;
+    margin-right: 20px;
+    margin-top: 25px;
+    background-color: white;
+    height: 302px;
+}
+
+.event-list {
+    flex: 1;
+}
+
+.event-list-day {
+    margin-bottom: 52px;
+}
+
+.event-list-day-header {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    color: rgb(47, 36, 30);
+}
+
+.event-list-item {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.event-list-item-date {
+    flex: initial;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-list-item-date-inner {
+    flex: initial;
+    margin: auto;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+}
+
+.event-list-item-main {
+    flex: 1;
+}
+
+.event-list-item-title {
+    flex: initial;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(47, 36, 30);
+}
+
+.event-list-item-bottom-row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.event-list-item-address {
+    flex: 1;
+    color: rgb(102, 102, 102);
+}
+
+.event-list-item-social {
+    flex: initial;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-list-item-social-inner {
+    flex: initial;
+    font-size: 14px;
+    padding-top: 18px;
+}
+
+.event-list-item-social-inner > a {
+    padding-left: 24px;
+    background-image: url('images/facebook.svg');
+    background-size: 16px;
+    background-repeat: no-repeat;
+}
+
+.event-calendar-header {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-calendar-header-inner {
+    padding-top: 4px;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.event-calendar-header-arrow {
+    flex: initial;
+    height: 100%;
+    width: 38px;
+}
+
+.event-calendar-header-arrow-l {
+    background: url('images/arrow-l.png') no-repeat center;
+}
+
+.event-calendar-header-arrow-r {
+    background: url('images/arrow-r.png') no-repeat center;
+}
+
+.event-calendar-divider {
+    width: 91%;
+    height: 1px;
+    margin: 0 auto;
+    border: 0;
+    background-color: rgb(234, 233, 231);
+}
+
+.event-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: rgb(102, 102, 102);
+    padding: 10px;
+}
+
+.event-calendar-day {
+    padding: 10px 11px 10px 11px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.event-calendar-day-name {
+    color: rgb(18, 120, 132);
+}
+
+.event-calendar-sel {
+    border-color: rgb(0, 142, 152);
+    background-color: rgb(0, 142, 152);
+    color: white;
+}
+
+.event-calendar-sel-start {
+    border-radius: 20px 0 0 20px;
+}
+
+.event-calendar-sel-end {
+    border-radius: 0 20px 20px 0;
+}
+
+.event-city-selector {
+    width: 240px;
+    height: 28px;
+    margin: 0 10px 10px;
+    border-color: rgb(234, 233, 231);
+}
+
+.wiki-column {
+    flex: 1;
+    margin-right: 80px;
+
+}
