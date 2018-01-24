@@ -2,7 +2,9 @@ import React, { PureComponent } from 'react';
 import './styles.scss';
 
 class WikiComponent extends PureComponent {
-
+    onWikiClick = () => {
+        location.href = location.origin + '/wiki.html';
+    };
     render() {
         return (
             <div className="wiki-categories-wrapper">
@@ -13,25 +15,25 @@ class WikiComponent extends PureComponent {
                             <div className = "wiki-categories-section-body">
                                 <div className="wiki-categories-section-lists-wrapper">
                                     <ul className="wiki-categories-section-list">
-                                        <li>Diagnosis</li>
-                                        <li>Early Diagnosis</li>
-                                        <li>Tests</li>
-                                        <li>Dietary</li>
-                                        <li>Special nutrition</li>
+                                        <li onClick={this.onWikiClick}>Diagnosis</li>
+                                        <li onClick={this.onWikiClick}>Early Diagnosis</li>
+                                        <li onClick={this.onWikiClick}>Tests</li>
+                                        <li onClick={this.onWikiClick}>Dietary</li>
+                                        <li onClick={this.onWikiClick}>Special nutrition</li>
                                     </ul>
                                     <ul className="wiki-categories-section-list">
-                                        <li>Sport Rehabilitation</li>
-                                        <li>Biomedical techniques</li>
-                                        <li>Therapeutic massage</li>
-                                        <li>Therapy</li>
-                                        <li>Tomatis therapy</li>
+                                        <li onClick={this.onWikiClick}>Sport Rehabilitation</li>
+                                        <li onClick={this.onWikiClick}>Biomedical techniques</li>
+                                        <li onClick={this.onWikiClick}>Therapeutic massage</li>
+                                        <li onClick={this.onWikiClick}>Therapy</li>
+                                        <li onClick={this.onWikiClick}>Tomatis therapy</li>
                                     </ul>
                                     <ul className="wiki-categories-section-list">
-                                        <li>Acupuncture</li>
-                                        <li>Hippotherapy</li>
-                                        <li>Kinesiology</li>
-                                        <li>Sensory Integration</li>
-                                        <li>Rehabilitation materials</li>
+                                        <li onClick={this.onWikiClick}>Acupuncture</li>
+                                        <li onClick={this.onWikiClick}>Hippotherapy</li>
+                                        <li onClick={this.onWikiClick}>Kinesiology</li>
+                                        <li onClick={this.onWikiClick}>Sensory Integration</li>
+                                        <li onClick={this.onWikiClick}>Rehabilitation materials</li>
                                     </ul>
                                 </div>
                                 <div className="wiki-categories-section-search-block">
@@ -56,24 +58,24 @@ class WikiComponent extends PureComponent {
                             <div className = "wiki-categories-section-body">
                                 <div className="wiki-categories-section-lists-wrapper">
                                     <ul className="wiki-categories-section-list">
-                                        <li>Habilitation</li>
-                                        <li>Self-service skills</li>
-                                        <li>Domestic skills</li>
-                                        <li>Alternative Communication</li>
-                                        <li>PECS</li>
+                                        <li onClick={this.onWikiClick}>Habilitation</li>
+                                        <li onClick={this.onWikiClick}>Self-service skills</li>
+                                        <li onClick={this.onWikiClick}>Domestic skills</li>
+                                        <li onClick={this.onWikiClick}>Alternative Communication</li>
+                                        <li onClick={this.onWikiClick}>PECS</li>
                                     </ul>
                                     <ul className="wiki-categories-section-list">
-                                        <li>Sign language</li>
-                                        <li>Special Programs</li>
-                                        <li>ABA therapy</li>
-                                        <li>T.E.A.C.H.</li>
-                                        <li>Floortime therapy</li>
+                                        <li onClick={this.onWikiClick}>Sign language</li>
+                                        <li onClick={this.onWikiClick}>Special Programs</li>
+                                        <li onClick={this.onWikiClick}>ABA therapy</li>
+                                        <li onClick={this.onWikiClick}>T.E.A.C.H.</li>
+                                        <li onClick={this.onWikiClick}>Floortime therapy</li>
                                     </ul>
                                     <ul className="wiki-categories-section-list">
-                                        <li>Home Learning</li>
-                                        <li>Distance education</li>
-                                        <li>Inclusive education</li>
-                                        <li>Study materials</li>
+                                        <li onClick={this.onWikiClick}>Home Learning</li>
+                                        <li onClick={this.onWikiClick}>Distance education</li>
+                                        <li onClick={this.onWikiClick}>Inclusive education</li>
+                                        <li onClick={this.onWikiClick}>Study materials</li>
                                     </ul>
                                 </div>
                                 <div className="wiki-categories-section-search-block">
@@ -98,30 +100,30 @@ class WikiComponent extends PureComponent {
                             <div className = "wiki-categories-section-body">
                                 <div className="wiki-categories-section-lists-wrapper">
                                     <ul className="wiki-categories-section-list">
-                                        <li>Family Support</li>
-                                        <li>Parent Groups</li>
-                                        <li>Psychological support</li>
-                                        <li>Special Parenting</li>
-                                        <li>Master classes</li>
+                                        <li onClick={this.onWikiClick}>Family Support</li>
+                                        <li onClick={this.onWikiClick}>Parent Groups</li>
+                                        <li onClick={this.onWikiClick}>Psychological support</li>
+                                        <li onClick={this.onWikiClick}>Special Parenting</li>
+                                        <li onClick={this.onWikiClick}>Master classes</li>
 
                                     </ul>
                                     <ul className="wiki-categories-section-list">
-                                        <li>The Arts</li>
-                                        <li>Art therapy</li>
-                                        <li>Socialization</li>
-                                        <li>Group classes</li>
-                                        <li>Leisure</li>
+                                        <li onClick={this.onWikiClick}>The Arts</li>
+                                        <li onClick={this.onWikiClick}>Art therapy</li>
+                                        <li onClick={this.onWikiClick}>Socialization</li>
+                                        <li onClick={this.onWikiClick}>Group classes</li>
+                                        <li onClick={this.onWikiClick}>Leisure</li>
                                     </ul>
                                     <ul className="wiki-categories-section-list">
-                                        <li>Summer Camps</li>
-                                        <li>Independence</li>
-                                        <li>Special Youth support</li>
-                                        <li>Special Adult support</li>
+                                        <li onClick={this.onWikiClick}>Summer Camps</li>
+                                        <li onClick={this.onWikiClick}>Independence</li>
+                                        <li onClick={this.onWikiClick}>Special Youth support</li>
+                                        <li onClick={this.onWikiClick}>Special Adult support</li>
 
                                     </ul>
                                     <ul className="wiki-categories-section-list">
-                                        <li>Supported employment</li>
-                                        <li>Transit houses</li>
+                                        <li onClick={this.onWikiClick}>Supported employment</li>
+                                        <li onClick={this.onWikiClick}>Transit houses</li>
                                     </ul>
                                 </div>
                                 <div className="wiki-categories-section-search-block">
@@ -146,11 +148,11 @@ class WikiComponent extends PureComponent {
                             <div className = "wiki-categories-section-body">
                                 <div className="wiki-categories-section-lists-wrapper">
                                     <ul className="wiki-categories-section-list">
-                                        <li>Public associations</li>
-                                        <li>Charitable funds</li>
-                                        <li>Social support</li>
-                                        <li>Legal advice</li>
-                                        <li>Invalidity</li>
+                                        <li onClick={this.onWikiClick}>Public associations</li>
+                                        <li onClick={this.onWikiClick}>Charitable funds</li>
+                                        <li onClick={this.onWikiClick}>Social support</li>
+                                        <li onClick={this.onWikiClick}>Legal advice</li>
+                                        <li onClick={this.onWikiClick}>Invalidity</li>
                                     </ul>
                                 </div>
                                 <div className="wiki-categories-section-search-block">
@@ -175,17 +177,17 @@ class WikiComponent extends PureComponent {
                             <div className = "wiki-categories-section-body">
                                 <div className="wiki-categories-section-lists-wrapper">
                                     <ul className="wiki-categories-section-list">
-                                        <li>How to select a specialist</li>
-                                        <li>How to select a center</li>
-                                        <li>Professional education</li>
-                                        <li>Enterprises for employment</li>
-                                        <li>Training tutors</li>
+                                        <li onClick={this.onWikiClick}>How to select a specialist</li>
+                                        <li onClick={this.onWikiClick}>How to select a center</li>
+                                        <li onClick={this.onWikiClick}>Professional education</li>
+                                        <li onClick={this.onWikiClick}>Enterprises for employment</li>
+                                        <li onClick={this.onWikiClick}>Training tutors</li>
                                     </ul>
                                     <ul className="wiki-categories-section-list">
-                                        <li>Training of specialists</li>
-                                        <li>Certification</li>
-                                        <li>Volunteer projects</li>
-                                        <li>Social Projects</li>
+                                        <li onClick={this.onWikiClick}>Training of specialists</li>
+                                        <li onClick={this.onWikiClick}>Certification</li>
+                                        <li onClick={this.onWikiClick}>Volunteer projects</li>
+                                        <li onClick={this.onWikiClick}>Social Projects</li>
                                     </ul>
                                 </div>
                                 <div className="wiki-categories-section-search-block">

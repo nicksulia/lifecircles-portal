@@ -6,10 +6,15 @@ import './styles.scss';
 
 
 class App extends PureComponent {
+
     render() {
         return (
             <div>
-                <div className="block" id="block01"></div>
+                <div className="block" id="block01" onClick={() => {
+                    console.log(location)
+                    location.href = location.origin;
+
+                }}></div>
                 <div className="block" id="block02">
                     <Wiki/>
                 </div>

@@ -59,6 +59,7 @@ p {
 }
 
 #block01 {
+    cursor: pointer;
     height: 90px;
     background-image: url('images/image_header.png');
 }
