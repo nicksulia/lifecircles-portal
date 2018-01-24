@@ -279,6 +279,6 @@ p {
 
 .wiki-column {
     flex: 1;
-    margin-right: 80px;
+    margin: 20px 80px 50px 0;
 
 }
