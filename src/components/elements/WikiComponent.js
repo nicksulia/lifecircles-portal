@@ -3,7 +3,7 @@ import './styles.scss';
 
 class WikiComponent extends PureComponent {
     onWikiClick = () => {
-        location.href = location.origin + '/wiki.html';
+        location.href = 'wiki.html';
     };
     render() {
         return (
