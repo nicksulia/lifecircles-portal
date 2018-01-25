@@ -11,9 +11,7 @@ class App extends PureComponent {
         return (
             <div>
                 <div className="block" id="block01" onClick={() => {
-                    console.log(location)
-                    location.href = location.origin;
-
+                    location.href = 'index.html';
                 }}></div>
                 <div className="block" id="block02">
                     <Wiki/>
